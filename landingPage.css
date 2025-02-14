@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Imperial+Script&display=swap');
+body {
+    margin: 0;
+    font-family: 'Cormorant';
+    font-style: italic;
+}
+.navbar {
+    display: flex;
+    gap: 500px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F3F8FF;
+    padding: 15px 20px;
+    font-weight:lighter;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    background-color:none;
+    color: #78184A; 
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 28px;
+}
+.nav-links a:hover {
+    color: #F3F8FF;
+    background-color: #78184A;
+    text-decoration:underline 1.25px;
+    transition: 0.5s;
+}
+.subscribe-btn {
+    background-color: #F3F8FF;
+    color: #78184A;
+    border: none;
+    padding: 10px 15px;
+    font-size: 25px;
+    font-family: 'Cormorant';
+    font-style: italic;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.subscribe-btn:hover {
+    color: #F3F8FF;
+    background-color: #78184A;
+    transition: 0.5s;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-text {
+    background-color: #F3F8FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #78184A;
+}
+.define {
+    padding: 50px;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: -20px;
+}
+.define span{
+    font-weight: bold;
+}
+.title {
+    font-family: 'Imperial Script';
+    text-align: center;
+    font-size: 100px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.buy-btn{
+    font-family: 'Cormorant';
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+    background-color: #78184A;
+    color: #F3F8FF;
+    border: none;
+    border-radius: 28px;
+}
+.buy-btn:hover{
+    background-color: #a13e71;
+    transition: 0.25s;
+}
+.blog{
+    padding: 50px;
+}
+.blog h1{
+    font-size: 50px;
+    color: #78184A;
+    font-weight: lighter;
+}
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.blog-card {
+    background: white;
+    padding: 15px;
+    width: 100%; 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(55, 1, 30, 0.1);
+}
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.blog-card h2 {
+    font-size: 20px;
+    color: #78184A;
+}
+.blog-card p {
+    font-size: 16px;
+    color: #a13e71;
+}
+.blog-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #78184A;
+    font-weight: bold;
+}
+.blog-card a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 900px) {
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+@media (max-width: 600px) {
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+    }
+}
+.shop-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    width: 100%;
+}
+.shop-products {
+    width: 100%;
+}
+.shop-products h1 {
+    color: #78184A;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.product-card {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(72, 2, 40, 0.1);
+}
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-card h3 {
+    font-size: 20px;
+    color: #78184A;
+    margin: 10px 0 5px;
+}
+.product-card p {
+    font-size: 16px;
+    color: #78184A;
+}
+.shop-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #78184A;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.shop-btn:hover {
+    background: #78184A;
+}
+.subscribe-form {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(54, 1, 34, 0.1);
+}
+.subscribe-form h2 {
+    font-size: 22px;
+    color: #78184A;
+    margin-bottom: 10px;
+}
+.subscribe-form p {
+    font-size: 16px;
+    color: #78184A;
+    margin-bottom: 15px;
+}
+.subscribe-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.subscribe-form input {
+    font-family: 'Cormorant';
+    font-style: italic;
+    padding: 10px;
+    border: 1px solid #a13e71;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.subscribe-form button {
+    padding: 10px;
+    background: #78184A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Cormorant';
+    font-size: large;
+    font-style: italic;
+    border-radius: 5px;
+}
+.subscribe-form button:hover {
+    background: #78184A;
+}
+@media (max-width: 768px) {
+    .shop-products, .subscribe-form {
+        width: 90%;
+    }
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons i {
+    color: #a13e71;
+    font-size: 40px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social-icons i:hover {
+    color: #78184A;
+}
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #78184A;
+    color: #F3F8FF;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.footer p {
+    margin: 0;
+    font-size: medium;
+}
