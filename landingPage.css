@@ -292,3 +292,43 @@ body {
     margin: 0;
     font-size: medium;
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .image-container {
+        height: auto;
+    }
+    .image-container img {
+        object-fit: contain;
+    }
+    .overlay-text {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .define {
+        padding: 20px;
+        font-size: 16px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+}
+@media (max-width: 480px) {
+    .title {
+        font-size: 40px; 
+    }
+}
