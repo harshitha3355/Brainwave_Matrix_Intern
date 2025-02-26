@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link rel="stylesheet" href="eCom.css">
+</head>
+<body>
+    <header>
+        <h1>Scent Symphony</h1>
+    </header>
+    <div class="container">
+        <input type="text" id="search-bar" placeholder="Search products...">
+        <div class="offer-card">
+            <div class="slider">
+                <div class="slide active">
+                    <h2>Limited Edition Fragrance</h2>
+                    <p>Get 30% off on our new collection!</p>
+                    <button>Shop Now</button>
+                </div>
+                <div class="slide">
+                    <h2>Buy One, Get One Free</h2>
+                    <p>Exclusive offer on select perfumes!</p>
+                    <button>Grab Deal</button>
+                </div>
+                <div class="slide">
+                    <h2>Exclusive Member Discount</h2>
+                    <p>Sign up and enjoy an extra 15% off!</p>
+                    <button>Join Now</button>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prev">&#10094;</button><!--HTML entity code for the left angle bracket (❮)-->
+                <button id="next">&#10095;</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product" data-id="1" data-name="Ethereal Bloom" data-price="200">
+                <img src="https://i.pinimg.com/736x/f9/e7/c8/f9e7c872bd867fcf68604593e448a5ca.jpg" alt="Ethereal Bloom">
+                <h3>Ethereal Bloom</h3>
+                <p>$200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Golden Amber" data-price="300">
+                <img src="https://i.pinimg.com/474x/1b/1e/f4/1b1ef42f6ea9abc86e2456ddcd4b2ced.jpg" alt="Golden Amber">
+                <h3>Golden Amber</h3>
+                <p>$300</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="Velvet Rosewood" data-price="250">
+                <img src="https://i.pinimg.com/474x/6b/81/4d/6b814d6d5768f126fa1356eb176a62b9.jpg" alt="Velvet Rosewood">
+                <h3>Velvet Rosewood</h3>
+                <p>$250</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4" data-name="Moonlit Whisper" data-price="200">
+                <img src="https://i.pinimg.com/474x/c2/c4/16/c2c416385851ea224822b22adfa89356.jpg" alt="Moonlit Whisper">
+                <h3>Moonlit Whisper</h3>
+                <p>$200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="5" data-name="Urban Legend" data-price="300">
+                <img src="https://i.pinimg.com/736x/e3/45/32/e3453213a0e719eec7e4826ca01bc7d2.jpg" alt="Urban Legend">
+                <h3>Urban Legend</h3>
+                <p>$300</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6" data-name="Regal Oud" data-price="250">
+                <img src="https://i.pinimg.com/736x/b3/c0/3a/b3c03ad6102c370179d62cc8b3aa8faa.jpg" alt="Regal Oud">
+                <h3>Regal Oud</h3>
+                <p>$250</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="7" data-name="Inferno Noir" data-price="200">
+                <img src="https://i.pinimg.com/736x/f4/c9/47/f4c9479550c0238e105148fa0733914f.jpg" alt="Inferno Noir">
+                <h3>Inferno Noir</h3>
+                <p>$200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="8" data-name="Azure Rush" data-price="300">
+                <img src="https://i.pinimg.com/736x/d4/f5/a3/d4f5a3358019ccf9c60aa5dbd03261dd.jpg" alt="Azure Rush">
+                <h3>Azure Rush</h3>
+                <p>$300</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="9" data-name="Titan Essence" data-price="250">
+                <img src="https://i.pinimg.com/736x/79/67/ae/7967ae028aa06c5ea460e15551b78a8d.jpg" alt="Titan Essence">
+                <h3>Titan Essence</h3>
+                <p>$250</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="10" data-name="Midnight Storm" data-price="200">
+                <img src="https://i.pinimg.com/736x/31/c2/06/31c20652847a04d490a375a9c1de718e.jpg" alt="Midnight Storm">
+                <h3>Spring Sakura</h3>
+                <p>$200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="11" data-name="Celestial Dew" data-price="300">
+                <img src="https://i.pinimg.com/736x/55/ad/a7/55ada7f380e66522e9d4d90720860ca4.jpg" alt="Celestial Dew">
+                <h3>Celestial Dew</h3>
+                <p>$300</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="12" data-name="Citrusy Feels" data-price="250">
+                <img src="https://i.pinimg.com/736x/cc/c9/82/ccc9822a2de1067d2f2f874727c1addb.jpg" alt="Citrusy Feels">
+                <h3>Citrusy Feels</h3>
+                <p>$250</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div id="cart-section">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+        <div id="checkout-page">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="eCom.js"></script>
+</body>
+</html>
