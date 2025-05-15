@@ -115,7 +115,7 @@ body {
 .blog-card {
     background: white;
     padding: 15px;
-    width: 100%; 
+    width: 90%; 
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(55, 1, 30, 0.1);
@@ -181,7 +181,7 @@ body {
 .product-card {
     background: white;
     padding: 15px;
-    width: 250px;
+    width: 200px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(72, 2, 40, 0.1);
